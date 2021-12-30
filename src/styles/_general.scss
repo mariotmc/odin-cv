@@ -1,0 +1,8 @@
+@use "functions" as *;
+@use "variables" as *;
+
+.general-information {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: rem(30);
+}

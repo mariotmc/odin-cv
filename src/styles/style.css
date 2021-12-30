@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Yusei+Magic&display=swap");
+:root {
+  --font-title: "Yusei Magic", sans-serif;
+  --font-body: "Roboto", sans-serif;
+}
+
+:root {
+  --primary-dark: #333;
+  --secondary-dark: #444;
+  --primary-light: #eee;
+  --secondary-light: #ddd;
+  --bg-hover: #ccc;
+}
+
+html {
+  height: 100%;
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  line-height: 1.1;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3.125rem 1.25rem;
+  background-color: var(--primary-dark);
+  color: var(--primary-light);
+  font-family: var(--font-title);
+}
+header h1 {
+  margin: auto 0.625rem auto 0;
+  font-size: 2.5rem;
+}
+
+footer {
+  width: 100%;
+  height: 3.125rem;
+  background-color: var(--primary-dark);
+}
+
+.general-information {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.875rem;
+}
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.875rem;
+}
+
+.education {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.875rem;
+}
+
+#pdfButton {
+  display: block;
+}
+
+#resetButton {
+  display: block;
+}/*# sourceMappingURL=style.css.map */
