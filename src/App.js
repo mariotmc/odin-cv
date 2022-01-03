@@ -45,7 +45,7 @@ export default class App extends Component {
   handleChange = (name) => (e) => {
     const { type } = e.target;
 
-    if (type === "text") {
+    if (type === "text" || type === "textarea") {
       this.setState({
         [name]: e.target.value,
       });
