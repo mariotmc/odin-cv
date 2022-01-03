@@ -1,0 +1,78 @@
+@use "functions" as *;
+@use "variables" as *;
+
+.cv {
+  width: 80vw;
+  max-width: rem(900);
+  margin: rem(50) auto;
+
+  .heading {
+    height: fit-content;
+    min-height: rem(130);
+    padding: rem(20);
+    color: #eee;
+    background-color: cornflowerblue;
+
+    h1,
+    p {
+      margin: 0;
+    }
+
+    h1 {
+      font-size: rem(48);
+      margin-bottom: rem(10);
+    }
+
+    p {
+      font-size: rem(24);
+    }
+  }
+
+  .container {
+    display: flex;
+    min-height: rem(800);
+    background-color: var(--primary-light);
+
+    .professional-information {
+      width: 100%;
+      padding: rem(20);
+
+      h3 {
+        border-bottom: 1px solid rgb(204, 204, 204);
+        color: rgb(20, 62, 114);
+        margin: 0 0 rem(15) 0;
+      }
+
+      section {
+        margin-bottom: rem(25);
+      }
+    }
+
+    .personal-information {
+      width: 40%;
+      justify-content: flex-end;
+      padding: rem(20);
+      background-color: var(--secondary-light);
+
+      h3 {
+        border-bottom: 1px solid rgb(204, 204, 204);
+        color: rgb(20, 62, 114);
+        margin: 0 0 rem(15) 0;
+      }
+
+      h4 {
+        margin: 0;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        margin-bottom: rem(20);
+      }
+
+      section {
+        margin-bottom: rem(15);
+      }
+    }
+  }
+}
