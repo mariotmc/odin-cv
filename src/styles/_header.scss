@@ -5,7 +5,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: rem(50) rem(20);
+  padding: rem(40) rem(20);
+  margin-bottom: rem(50);
   background-color: var(--primary-dark);
   color: var(--primary-light);
   font-family: var(--font-title);
