@@ -17,6 +17,9 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+  color: var(--primary-dark);
+  background-color: rgb(204, 204, 204);
+  font-family: var(--font-body);
 }
 
 h1,
@@ -26,8 +29,17 @@ h3 {
   line-height: 1.1;
 }
 
+h3 {
+  font-size: rem(20);
+}
+
 a,
 a:visited,
 a:active {
   text-decoration: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
 }
