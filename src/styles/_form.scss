@@ -1,0 +1,107 @@
+@use "functions" as *;
+@use "variables" as *;
+
+form {
+  width: 80vw;
+  max-width: rem(900);
+  margin: auto;
+  padding: rem(40);
+  background-color: rgb(238, 238, 238);
+  border-radius: rem(5);
+  box-shadow: rgb(0 0 0 / 35%) 0 rem(5) rem(15);
+
+  .general-information {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: rem(30);
+
+    textarea {
+      resize: none;
+      height: rem(80);
+    }
+  }
+
+  .experience {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: rem(30);
+  }
+
+  .education {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: rem(30);
+  }
+
+  input,
+  button {
+    font-family: var(--font-body);
+  }
+
+  input,
+  textarea,
+  label {
+    margin-bottom: rem(5);
+    padding: rem(5);
+    font-size: rem(18);
+    border: none;
+    border-radius: rem(5);
+    outline: none;
+
+    &:focus {
+      outline: rem(1) solid var(--primary-dark);
+    }
+  }
+
+  input[data-autocompleted] {
+    background-color: transparent !important;
+  }
+
+  label {
+    background-color: #fff;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  #photo {
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  button {
+    width: 100%;
+    margin-top: rem(10);
+    padding: rem(10);
+    font-size: rem(16);
+    font-weight: 700;
+    background-color: var(--secondary-dark);
+    color: #fff;
+    border: none;
+    border-radius: rem(5);
+
+    &:hover {
+      background-color: var(--primary-dark);
+      cursor: pointer;
+    }
+  }
+
+  #pdfButton {
+    background-color: rgb(27, 161, 72);
+
+    &:hover {
+      background-color: rgb(10, 144, 55);
+    }
+  }
+
+  #resetButton {
+    background-color: rgb(179, 33, 30);
+
+    &:hover {
+      background-color: rgb(162, 16, 13);
+    }
+  }
+}
