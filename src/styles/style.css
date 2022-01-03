@@ -1,10 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Yusei+Magic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap");
 :root {
-  --font-title: "Yusei Magic", sans-serif;
-  --font-body: "Roboto", sans-serif;
-}
-
-:root {
+  --font-title: "Poppins", sans-serif;
+  --font-body: "Nunito", sans-serif;
   --primary-dark: #333;
   --secondary-dark: #444;
   --primary-light: #eee;
@@ -28,6 +25,9 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+  color: var(--primary-dark);
+  background-color: #cccccc;
+  font-family: var(--font-body);
 }
 
 h1,
@@ -37,17 +37,27 @@ h3 {
   line-height: 1.1;
 }
 
+h3 {
+  font-size: 1.25rem;
+}
+
 a,
 a:visited,
 a:active {
   text-decoration: none;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+}
+
 header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 3.125rem 1.25rem;
+  padding: 2.5rem 1.25rem;
+  margin-bottom: 3.125rem;
   background-color: var(--primary-dark);
   color: var(--primary-light);
   font-family: var(--font-title);
@@ -63,28 +73,157 @@ footer {
   background-color: var(--primary-dark);
 }
 
-.general-information {
+form {
+  width: 80vw;
+  max-width: 56.25rem;
+  margin: auto;
+  padding: 2.5rem;
+  background-color: #eeeeee;
+  border-radius: 0.3125rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 0.3125rem 0.9375rem;
+}
+form .general-information {
   display: flex;
   flex-direction: column;
   margin-bottom: 1.875rem;
 }
-
-.experience {
+form .general-information textarea {
+  resize: none;
+  height: 5rem;
+}
+form .experience {
   display: flex;
   flex-direction: column;
   margin-bottom: 1.875rem;
 }
-
-.education {
+form .education {
   display: flex;
   flex-direction: column;
   margin-bottom: 1.875rem;
 }
-
-#pdfButton {
-  display: block;
+form input,
+form button {
+  font-family: var(--font-body);
+}
+form input,
+form textarea,
+form label {
+  margin-bottom: 0.3125rem;
+  padding: 0.3125rem;
+  font-size: 1.125rem;
+  border: none;
+  border-radius: 0.3125rem;
+  outline: none;
+}
+form input:focus,
+form textarea:focus,
+form label:focus {
+  outline: 0.0625rem solid var(--primary-dark);
+}
+form input[data-autocompleted] {
+  background-color: transparent !important;
+}
+form label {
+  background-color: #fff;
+}
+form label:hover {
+  cursor: pointer;
+}
+form #photo {
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+}
+form button {
+  width: 100%;
+  margin-top: 0.625rem;
+  padding: 0.625rem;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: var(--secondary-dark);
+  color: #fff;
+  border: none;
+  border-radius: 0.3125rem;
+}
+form button:hover {
+  background-color: var(--primary-dark);
+  cursor: pointer;
+}
+form #pdfButton {
+  background-color: #1ba148;
+}
+form #pdfButton:hover {
+  background-color: #0a9037;
+}
+form #resetButton {
+  background-color: #b3211e;
+}
+form #resetButton:hover {
+  background-color: #a2100d;
 }
 
-#resetButton {
-  display: block;
+.cv {
+  width: 80vw;
+  max-width: 56.25rem;
+  margin: 3.125rem auto;
+}
+.cv .heading {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-height: 8.125rem;
+  padding: 1.25rem;
+  color: #eee;
+  background-color: cornflowerblue;
+}
+.cv .heading h1,
+.cv .heading p {
+  margin: 0;
+}
+.cv .heading h1 {
+  font-size: 3rem;
+  margin-bottom: 0.625rem;
+}
+.cv .heading p {
+  font-size: 1.5rem;
+}
+.cv .container {
+  display: flex;
+  min-height: 50rem;
+  background-color: var(--primary-light);
+}
+.cv .container .professional-information {
+  width: 100%;
+  padding: 1.25rem;
+}
+.cv .container .professional-information h3 {
+  border-bottom: 1px solid #cccccc;
+  color: #143e72;
+  margin: 0 0 0.9375rem 0;
+}
+.cv .container .professional-information section {
+  margin-bottom: 1.5625rem;
+}
+.cv .container .personal-information {
+  width: 40%;
+  justify-content: flex-end;
+  padding: 1.25rem;
+  background-color: var(--secondary-light);
+}
+.cv .container .personal-information h3 {
+  border-bottom: 1px solid #cccccc;
+  color: #143e72;
+  margin: 0 0 0.9375rem 0;
+}
+.cv .container .personal-information h4 {
+  margin: 0;
+}
+.cv .container .personal-information img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1.25rem;
+}
+.cv .container .personal-information section {
+  margin-bottom: 0.9375rem;
 }/*# sourceMappingURL=style.css.map */
